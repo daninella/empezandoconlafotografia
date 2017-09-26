@@ -1,0 +1,141 @@
+@charset "UTF-8";
+/* CSS Document */
+#contenedor2{
+	background-color: #5B7989;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	height: 70px;
+}
+body{
+	background-color: #02010A;
+	width: 900px;
+	margin: 0 auto;
+}
+/*Titulo inicial*/
+div h1{
+	font-family: 'Dancing Script', cursive;
+	color: white;
+	text-shadow: 2px 2px 2px #02010a;
+	text-align:left;
+	margin-left: 20px;
+	
+}
+/*Div que contiene el titulo, debido a que el h1 produce un espacio arriba, fue mi manera de solucionarlo*/
+div{
+	padding-top: 4px;
+}
+
+/*Lista de enlaces o menu*/
+nav ul{
+	float: right;
+	font-family: 'Dancing Script', cursive;
+	font-size: 20px;
+	margin-top: -45px;
+	text-shadow: 2px 2px 2px #02010a;
+	flex: initial;
+}
+nav li{
+	display: inline;
+	margin-right: 40px; 
+}
+nav a{
+	color:#FFFFFF;
+	text-decoration: none;
+}
+nav a:hover{
+	color: #8AEBFF;
+	transition: 0.5s;
+	text-decoration-line:underline;
+}
+header{
+	background-color: #82c3a6;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	height: 580px;
+}
+div img{
+	width: 80%;
+	height: 80%;
+	box-shadow: 2px  2px 2px #02010a;
+	margin-left: 10%;
+	margin-top: 10px;
+}
+section img{
+	flex-direction: row;
+
+	margin: 0 auto;
+	margin-top: 20px;
+	
+}
+/*foto retrato*/
+.foto1{
+	width: 45%;
+	margin-left: 70px;
+}
+.foto1:hover{
+	box-shadow: 2px  2px 2px #82c3a6;
+	-webkit-transform: rotate(10deg);
+     -moz-transform: rotate(10deg);
+       -o-transform: rotate(10deg);
+      -ms-transform: rotate(10deg);
+          transform: rotate(10deg);
+	transition: 0.5s;
+}
+/*foto paisaje*/
+.foto2{
+	width: 40%;
+	margin-right: 50px;
+}
+.foto2:hover{
+	box-shadow: 2px  2px 2px #82c3a6;
+	transform: translate(10px, -5px); 
+
+}
+
+@media screen{ 
+	#contenedor{ width: 100% }
+}
+@media (min-width:900px){
+	div{
+	padding-top: 4px;
+}
+/*Lista de enlaces o menu*/
+nav ul{
+	float: right;
+	font-family: 'Dancing Script', cursive;
+	font-size: 20px;
+	margin-top: -45px;
+	text-shadow: 2px 2px 2px #02010a;
+}
+nav li{
+	display: inline;
+	margin-right: 40px; 
+}
+nav a{
+	color:#FFFFFF;
+	text-decoration: none;
+}
+nav a:hover{
+	color: #8AEBFF;
+	transition: 0.5s;
+	text-decoration-line:underline;
+}
+
+}
+.seccion3{
+	background-color: #D5C75F;
+	height: 350px;
+}
+.secundario{
+	display: inline-flex;
+	
+}
+.footer{
+	background-color: #C6d5c5;
+	margin-top: -20px;
+	border-bottom: 10px;
+	display:flex;
+	width: 100%;
+	height: 150px;
+	
+}
