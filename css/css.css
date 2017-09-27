@@ -73,19 +73,6 @@ header img{
 	margin-bottom: 10px;
 	box-shadow: 2px  2px 2px #02010a;
 }
-/*
-
-nav ul{
-	display: flex;
-	flex-direction:row-reverse;
-	flex-wrap: nowrap;
-	font-family: 'Dancing Script', cursive;
-	font-size: 20px;
-	margin-top: -50px;
-	text-shadow: 2px 2px 2px #02010a;
-
-}
-*/
 .uno{
 	order: 3;
 }
@@ -108,24 +95,11 @@ nav a:hover{
 	transition: 0.5s;
 	text-decoration-line:underline;
 }
-/*
-div{
-	font-family: 'Dancing Script', cursive;
-	color: white;
-	text-shadow: 2px 2px 2px #02010a;
-	text-align:left;
-	margin-left: 20px;
-	margin-top: -20px;
-	padding: 1px;
-}
-*/
 /*CONTENEDOR DE IMAGENES*/
 .contenedor{
 	background-color: #d5c75f;
 	display: flex;
-	
 }
-
 /*IMAGEN PAISAJE*/
 .imagen{
 	padding: 30px;
@@ -159,37 +133,58 @@ div{
 .imagen .texto{
 	text-align: center;
 }
+.texto{
+	font-family:'Dancing Script', cursive;
+	font-size: 30px;
+}
+.texto:hover{
+	text-decoration: underline;
+	color: #FFFFFF;
+}
+@media screen and (max-width: 900px){
+	 .contenedor{
+		display: block;
+	}
+	.contenedor .imagen{
+		width: 100%;
+		text-align: center;
+	}
+	.texto{
+		text-align: center;
+		width: 100%;
+	}
+}
 /*INICIO DE FOOTER --PREGUNTA-- como alinear las cajas centradas y con separaciones correspondientes*/
 footer{
 	background-color: #C6d5c5;
-	height: 200px;
+	height: 150px;
 }
-/*
 .contenedores{
 	display: flex;
-	flex-direction: row;
-	flex-grow: 3;
-	font-family: 'Dancing Script', cursive;
-	font-size: 20px;
-	margin-top: -50px;
-	text-shadow: 2px 2px 2px #02010a;
+	height: 100%;
 }
-*/
-.h1{
-	line-height: 0.5px;
-	color: #FFFFFF;
-	text-shadow: none;
-	margin-top: 65px;
-}
-.p{
-	line-height: 0.5px;
-	color: #FFFFFF;
-	text-shadow: none;
+.cajas{
+	width: 25%;
 	text-align: center;
+	padding: 30px;
+	box-sizing: border-box;
 	font-family: 'Dancing Script', cursive;
+	font-size: 25px;
+	line-height: 15px;
 }
-/*ICONOS REDES SOCIALES --PREGUNTA--Como ponerle un padding para un circulo por la parte de atra ssin un borde entero--*/
-i{
-	padding: 1px;
-	
+.parrafo{
+	text-align: center;
+	font-size: 15px;
+}
+@media screen and (max-width: 900px){
+	footer{
+		height: 150%;
+	} 
+	.contenedores{
+		display: block;
+	}
+	.parrafos .cajas{
+		text-align: center;
+		width: 100%;
+	}
 }

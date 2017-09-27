@@ -1,3 +1,174 @@
 @charset "UTF-8";
 /* CSS Document */
+.contenido{
+	max-width: 900px;
+	margin:0 auto;
+	
+}
+.header{
+	
+}
+.header .title h1{
+	font-family: 'Dancing Script', cursive;
+	color: #FFFFFF;
+	font-size: 20px;
+	text-shadow: 2px 2px 2px #02010a;
+	width: 230px;
+}
+.header .nav{
+	display: flex;
+    background-color: #5b7989;
+    flex-wrap: wrap;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	justify-content: space-between;
+	text-align: right;
+}
+.header .items{
+	width: 400px;
+	font-family: 'Dancing Script', cursive;
+	margin-top: 20px;
+}
 
+@media screen and (max-width: 900px){
+	.nav{
+		display: block;
+	}
+	.header .items, .header .title{
+		width: 100%;
+		text-align: center;
+	}
+	.header .title h1{
+		text-align: center;
+		width: 100%;
+	}
+}
+/*
+BARRA DE NAVEGACION
+nav{
+	background-color: #5b7989;
+	height: 65px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	margin-top: 8px;
+}
+*/
+body{
+	background-color: #000;
+}
+/*BARRA DE INICIO*/
+header{
+	height: 330%;
+	background-color: #82c3a6;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+header img{
+	width: 85%;
+	display: block;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	box-shadow: 2px  2px 2px #02010a;
+}
+nav li{
+	display: inline;
+	margin-right: 40px; 
+}
+nav a{
+	color:#FFFFFF;
+	text-decoration: none;
+}
+nav a:hover{
+	color: #8AEBFF;
+	transition: 0.5s;
+	text-decoration-line:underline;
+}
+/*CONTENEDOR DE IMAGENES*/
+.contenedor{
+	background-color: #d5c75f;
+	display: flex;
+	
+}
+
+/*IMAGEN PAISAJE*/
+.contenedor.imagen{
+	text-align: center;
+}
+.foto1{
+	width: 70%;
+	box-shadow: 2px  2px 2px #02010a;
+	filter: blur(10px); 
+	
+}
+.foto2{
+	width: 100%;
+	box-shadow: 2px  2px 2px #02010a;
+	filter:grayscale(100%);
+}
+.foto3{
+	width: 100%;
+	box-shadow: 2px  2px 2px #02010a;
+	filter:sepia(90%);
+}
+.foto4{
+	width: 100%;
+	box-shadow: 2px  2px 2px #02010a;
+	filter: grayscale(100%);
+}
+.foto5{
+	width: 100%;
+	box-shadow: 2px  2px 2px #02010a;
+}
+.foto6{
+	width: 100%;
+	box-shadow: 2px  2px 2px #02010a;
+	filter: grayscale(100%);
+}
+/*TEXTO IMAGENES*/
+.imagen .texto{
+	text-align: center;
+}
+.texto{
+	font-family:'Dancing Script', cursive;
+	font-size: 30px;
+}
+.texto:hover{
+	text-decoration: underline;
+	color: #FFFFFF;
+}
+@media screen and (max-width: 900px){
+	 .contenedor{
+		display: block;
+	}
+	.contenedor .imagen{
+		width: 80%;
+		text-align: center;
+	}
+	.contenedor .imagen{
+	height: 80%;
+	}
+}
+/*INICIO DE FOOTER --PREGUNTA-- como alinear las cajas centradas y con separaciones correspondientes*/
+footer{
+	background-color: #C6d5c5;
+	height: 200px;
+}
+.h1{
+	line-height: 0.5px;
+	color: #FFFFFF;
+	text-shadow: none;
+	margin-top: 65px;
+}
+.p{
+	line-height: 0.5px;
+	color: #FFFFFF;
+	text-shadow: none;
+	text-align: center;
+	font-family: 'Dancing Script', cursive;
+}
+/*ICONOS REDES SOCIALES --PREGUNTA--Como ponerle un padding para un circulo por la parte de atra ssin un borde entero--*/
+i{
+	padding: 1px;
+}
