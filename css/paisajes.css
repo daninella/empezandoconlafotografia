@@ -43,16 +43,6 @@
 		width: 100%;
 	}
 }
-/*
-BARRA DE NAVEGACION
-nav{
-	background-color: #5b7989;
-	height: 65px;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
-	margin-top: 8px;
-}
-*/
 body{
 	background-color: #000;
 }
@@ -89,15 +79,19 @@ nav a:hover{
 .contenedor{
 	background-color: #d5c75f;
 	display: flex;
-	
+	flex-wrap: wrap;
+	width: 100%;
+	align-items: center;
+
 }
 
 /*IMAGEN PAISAJE*/
-.contenedor.imagen{
-	text-align: center;
+.fotografia.foto1{
+	
+	
 }
 .foto1{
-	width: 70%;
+	width: 100%;
 	box-shadow: 2px  2px 2px #02010a;
 	filter: blur(10px); 
 	
@@ -142,33 +136,48 @@ nav a:hover{
 	 .contenedor{
 		display: block;
 	}
-	.contenedor .imagen{
+	.contenedor .fotografia{
 		width: 80%;
 		text-align: center;
+		padding-left: 100px;
+		box-sizing: border-box;
 	}
-	.contenedor .imagen{
+	.contenedor .fotografia{
 	height: 80%;
 	}
+	
 }
-/*INICIO DE FOOTER --PREGUNTA-- como alinear las cajas centradas y con separaciones correspondientes*/
+/*INICIO DE FOOTER*/
 footer{
 	background-color: #C6d5c5;
-	height: 200px;
+	height: 150px;
 }
-.h1{
-	line-height: 0.5px;
-	color: #FFFFFF;
-	text-shadow: none;
-	margin-top: 65px;
+.contenedores{
+	display: flex;
+	height: 100%;
 }
-.p{
-	line-height: 0.5px;
-	color: #FFFFFF;
-	text-shadow: none;
+.cajas{
+	width: 25%;
 	text-align: center;
+	padding: 15px;
+	box-sizing: border-box;
 	font-family: 'Dancing Script', cursive;
+	font-size: 25px;
+	line-height: 15px;
 }
-/*ICONOS REDES SOCIALES --PREGUNTA--Como ponerle un padding para un circulo por la parte de atra ssin un borde entero--*/
-i{
-	padding: 1px;
+.parrafo{
+	text-align: center;
+	font-size: 15px;
+}
+@media screen and (max-width: 900px){
+	footer{
+		height: 150%;
+	} 
+	.contenedores{
+		display: block;
+	}
+	.parrafos .cajas{
+		text-align: center;
+		width: 100%;
+	}
 }
