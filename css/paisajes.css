@@ -132,20 +132,26 @@ nav a:hover{
 	text-decoration: underline;
 	color: #FFFFFF;
 }
+.contenedor .fotografia{
+	float: left;
+	width: 27%;
+	margin: 15px 3%;
+}
 @media screen and (max-width: 900px){
-	 .contenedor{
+	.contenedor {
 		display: block;
 	}
 	.contenedor .fotografia{
 		width: 80%;
+		float: none;
+		margin: 0;
 		text-align: center;
 		padding-left: 100px;
 		box-sizing: border-box;
 	}
 	.contenedor .fotografia{
-	height: 80%;
+		height: 80%;
 	}
-	
 }
 /*INICIO DE FOOTER*/
 footer{
